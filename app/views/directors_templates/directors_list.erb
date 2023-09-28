@@ -1,0 +1,21 @@
+<h1> List of Directors </h1>
+
+<table border="1">
+<tr>
+<th> ID </th>
+<th>Image</th>
+<th>Name</th>
+<th>Dob</th>
+<th></th>
+</tr>
+<% @x.each do |z|%>
+<tr>
+<td><%= z.id%></td>
+<td>
+<img src="<%= z.image %>" style="width:250px;">
+</td>
+<td><%=z.name%></td>
+<td><%= z.dob%></td>
+<td><a href ="/directors/<%=z.id%>"> Show Details</a></td>
+</tr>
+<%end%>
