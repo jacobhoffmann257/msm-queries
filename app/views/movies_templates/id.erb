@@ -1,0 +1,17 @@
+<h1>Movie #<%= @x.id %> details</h1>
+<a href="/movies">Go back</a>
+
+<dl>
+  <dt>Title</dt>
+    <dd><%= @x.title%></dd>
+  <dt>Year</dt>
+    <dd><%= @x.year%></dd>
+  <dt>Duration</dt>
+    <dd><%= @x.duration%></dd>
+  <dt>Description</dt>
+    <dd><%= @x.description%></dd>
+  <dt>Image</dt>
+    <dd><img src="<%= @x.image%>" style="width:250px;"></dd>
+  <dt>Director</dt>
+    <dd><%= @y.name%></dd>
+</dl>

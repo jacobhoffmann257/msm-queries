@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get("/directors/eldest",{:controller => "directors", :action => "get_oldest"})
   get("/directors", {:controller => "directors", :action => "list"})
   get("/directors/:id",{controller: "directors", action: "id"})
+  get("/movies/:id", {controller: "movies", action: "id"})
+  get("/movies",{controller: "movies", action: "all"})
 end
